@@ -3,8 +3,6 @@ import axios from 'axios';
 import Movie from './Movie';
 
 
-//we need to update our item state setter (MOVIE) in which component?
-
 const initialValues = {
     id: null,
     title: '',
@@ -48,7 +46,6 @@ const changeHandler = event => {
         .then(res => {
           console.log(res.data)
           props.history.push('/')
-          //UPDATE DATA WITH THIS INFO SO REFRESHES -> pass along movie
         })
         .catch(err => console.log(err))
 
